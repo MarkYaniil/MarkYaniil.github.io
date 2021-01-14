@@ -1,0 +1,14 @@
+@mixin header {
+    padding-top: 45px;
+    font-size: 28px;
+    font-family: "OpenSans";
+    color: $secondary-color;
+    text-align: center;
+    font-weight: 900;
+}
+@mixin description {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}

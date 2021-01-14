@@ -1,0 +1,22 @@
+@media (max-width: 991px) {
+    .benefits, .call-order {
+        padding-top: 35px;
+        .wrapper {
+            padding-top: 20px;
+        }
+        &_item {
+            padding-top: 50px;
+            &-header {
+                padding-top: 20px;
+            }
+        }
+    }
+    .call-order {
+        &_info {
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px) {}
+@media (max-width: 575px) {}
+@media (max-width: 321px) {}
