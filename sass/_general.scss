@@ -1,3 +1,6 @@
+* {
+    overflow-x: hidden;
+}
 input {
     border: none;
     border-bottom: 1px solid #000;
@@ -98,18 +101,18 @@ input {
         &-descr {
             padding-top: 27px;
             font-size: 18px;
-            font-weight: 300;
+            font-family: 'Open Sans Light';
             color: #f4f7f9;
         }
     }
     &_social {
-        padding-top: 100px;
+        padding-top: 50px;
         display: flex;
         justify-content: center;
         a {
             color: rgba($color: #fff, $alpha: .4);
             font-size: 30px;
-            margin-right: 15px;
+            margin: 0 15px;
             transition: .3s;
             &:hover {
                 color: #c9c9c9;
@@ -117,11 +120,25 @@ input {
             }
         }
     }
+    &_arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 60px auto 0;
+        border-radius: 100%;
+        color: $first-color;
+        background-color: rgba($color: #fff, $alpha: .55);
+        i {
+            font-size: 28px;
+        }
+    }
 }
 
 .services {
     background: #f4f7f9;
-    min-height: 460px;
+    min-height: 440px;
     &_header {
         @include header;
     }
@@ -137,7 +154,8 @@ input {
             height: 69px;
         }
         &_text {
-            padding: 0 15px;
+            max-width: 300px;
+            padding-left: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -147,7 +165,7 @@ input {
         }
         &_header {
             font-size: 20px;
-            font-weight: 400;  
+            font-family: 'Open Sans Medium';
         }
     }
     &_action {
@@ -175,8 +193,7 @@ input {
     }
     &_descr {
         padding-top: 20px;
-        text-shadow: 18px;
-        font-weight: 700;
+        font-family: 'Open Sans Bold';
         text-align: center;
         color: #384d5c;
     }
@@ -186,7 +203,6 @@ input {
         display: flex;
         justify-content: space-between;
         font-size: 14px;
-        font-weight: 700;
         line-height: 14px;
         cursor: pointer;
         &_item {
@@ -221,7 +237,7 @@ input {
         &-header {
             padding-top: 65px;
             font-size: 18px;
-            font-weight: 700;
+            font-family: 'Open Sans Bold';
         }
         &-descr {
             font-size: 13px;
@@ -290,6 +306,7 @@ input {
         margin: 0 auto;
         padding: 10px;
         margin-top: 50px;
+        margin-bottom: 15px;
         border: none;
         transition: .3s;
         border-radius: 5px;
