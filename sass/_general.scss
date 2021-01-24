@@ -1,6 +1,9 @@
 * {
     overflow-x: hidden;
 }
+h1, h2, h3, ul, li, i, div, a{
+    overflow: hidden;
+}
 input {
     border: none;
     border-bottom: 1px solid #000;
@@ -144,6 +147,9 @@ input {
     }
     .wrapper {
         padding-top: 50px;
+        .row {
+            width: 100%;
+        }
     }
     &_item {
         // width: 33%;
@@ -165,7 +171,7 @@ input {
         }
         &_header {
             font-size: 20px;
-            font-family: 'Open Sans Medium';
+            font-weight: 500;
         }
     }
     &_action {
@@ -204,13 +210,19 @@ input {
         justify-content: space-between;
         font-size: 14px;
         line-height: 14px;
+        font-weight: 700;
         cursor: pointer;
         &_item {
             padding: 15px 30px;
+            transition: .3s all;
             &-active {
                 background-color: $secondary-color;
                 border-radius: 12px;
                 color: $first-color;
+            }
+            &:hover {
+                border-radius: 12px;
+                background-color: rgba($color: #393141, $alpha: .2);
             }
         }
     }
@@ -324,7 +336,8 @@ input {
 }
 
 .footer {
-    height: 200px;
+    padding-top: 30px;
+    height: auto;
     margin-top: 50px;
     background: #7d3cd1;
     border-top: 4px solid rgba($color: #062033, $alpha: .2);
@@ -374,11 +387,12 @@ input {
     }
     }
     &_copyright {
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
+        // position: absolute;
+        // right: 20px;
+        // bottom: 10px;
+        margin: 0 auto;
         color: #000;
         font-size: 12px;
-
+        text-align: center;
     }
 }
